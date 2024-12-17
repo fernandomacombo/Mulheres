@@ -10,7 +10,7 @@
     --body:#fda481;
     --link:#37415c;
     --link_background:#54162B;
-    --back_header:#b4182D;
+    --back_header:#b4182d;
    }
 
    body{
@@ -25,10 +25,24 @@ ul{
     color: #fff;
     font-size: larger;
   }
+  p{
+    padding: 10px;
+  
+  }
+
+  .btn{
+    background-color:var(--link_background) ;
+    padding: 10px;
+    border-radius: 4rem;
+    border: 0.1px solid rgba(255, 255, 255, 0.384);
+
+
+  }
 
   header{
     background-color: var(--back_header);
     font-variant: small-caps;
+    box-shadow: 0 0 10px 0.1px black;
     
   }
 
@@ -54,19 +68,22 @@ ul{
   }
 
   main{
-
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    background:url(../img/bg.jpg) center center no-repeat;
+    background-size: cover;
+    z-index: -1;
   }
 
   main > .princimpal{
-    height: 100vh;
-    position: absolute;
-    top: 0%;
-    left: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background:url(../img/podcasts-para-freelancers.jpg) center center no-repeat;
+    height:100%;
+    background-color:#b4182d5d;
   }
 
       /* position: absolute;
